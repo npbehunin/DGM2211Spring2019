@@ -1,0 +1,14 @@
+1. Parent constrain lower arm joint together from IK, FK, and RK.
+2. Add attribute to transform control, IKFK switch min to 0 max to 1.
+3. (Press 3 to expand nodes in node editor.) IKFK switch connects to lamp arm FK 01 Jnt in all 3 parent constraints, then the REVERSE of the IKFK switch output goes to lamp arm IK 01 Jnt in the parent constraints (IK is 0, FK is 1!)
+
+Other notes
+Root jnt and base jnt should be in the same spot. The 3 systems (IK, FK, RK) should be parented under the base jnt
+
+Root > Base > IK, FK, RK joint grps
+
+There will be a transform, cog, AND a base control. Just add one for base.
+
+FK, IK, and RK ctrl grps should be right under lamp base ctrl (transform > cog > base > FK, IK)
+
+BIND THE SKIN TO THE RK JOINTS.
